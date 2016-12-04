@@ -9,5 +9,7 @@ RUN apk add --no-cache \
 
 RUN gem install dpl
 
-ENTRYPOINT ["dpl"]
+COPY entrypoint.sh /
+
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["--help"]
