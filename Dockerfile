@@ -1,5 +1,4 @@
-FROM ruby:2.6-alpine
-MAINTAINER Tobias L. Maier <tobias.maier@baucloud.com>
+FROM ruby:3.0-alpine
 
 RUN echo 'gem: --no-document' >> /etc/gemrc
 
